@@ -1,0 +1,71 @@
+const {MongoClient}=require('mongodb');
+const url ='mongodb://0.0.0.0:27017';
+const client = new MongoClient(url);
+async function dbConnect()
+{
+    let result = await client.connect();
+    let db = result.db('Mongo_saample');
+    return db.collection('Mongo');
+   
+}
+module.exports=dbConnect;
+
+
+
+const {MongoClient}=require('mongodb');
+const url ='mongodb://0.0.0.0:27017';
+const client = new MongoClient(url);
+async function getData()
+{
+    let result = await client.connect();
+    let db = result.db('Mongo_saample');
+    let collection = db.collection('Mongo');
+    let response = await collection.find({}).toArray();
+    console.log(response);
+}
+getData();
+
+
+
+const dbConnect = require('./mongo_conn');
+
+const main=async ()=>{
+    let data = await dbConnect();
+    data = await data.find().toArray(); //in find can mention search data
+    console.log(data);
+}
+main();
+
+
+
+
+const dbConnect = require('./mongo_conn');
+
+const insert=async ()=>{
+    const db = await dbConnect();
+    const result = await db.insertOne(       //insertMany
+        {product:'Eraser',qty:50 }
+    );
+    console.log(result)
+
+}
+insert();
+
+
+
+
+
+const dbConnect = require('./mongo_conn');
+
+const updateData=async ()=>{
+    const data = await dbConnect();
+    const result = await data.updateOne(        //update -for all
+        {product:'Eraser'}, {
+            $set: {product:'Papers', qty:25 }
+        }
+    );
+    console.warn(result)
+}
+updateData();
+
+
