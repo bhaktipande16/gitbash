@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="homepage">
+        <div data-role="header">
+            <h1>PVG COLLEGE, PUNE</h1>
+        </div>
+        <div data-role="content">
+            <a href="#IT">
+                <button>INFORMATION TECHNOLOGY</button>
+            </a>
+        </div>
+        <div data-role="content">
+            <a href="#COMP">
+                <button>COMPUTER SCIENCE</button>
+            </a>
+        </div>
+        <div data-role="content">
+            <a href="#MECH">
+                <button>MECHANICAL</button>
+            </a>
+        </div>
+        <div data-role="content">
+            <a href="#ELE">
+                <button>ELECTRICAL</button>
+            </a>
+        </div>
+        <div data-role="content">
+            <a href="#ENTC">
+                <button>ELECTRONICS AND TELECOMMUNICATION</button>
+            </a>
+        </div>
+    </div>
+
+    <div data-role="page" id="IT">
+        <div data-role="header">
+            <h1>INFORMATION TECHNOLOGY</h1>
+        </div>
+        <div data-role="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nesciunt minima explicabo iste veritatis laborum! Exercitationem, rem quaerat laboriosam vitae autem eaque. Sunt ipsum autem aspernatur sint, perferendis dignissimos aut.</p>
+        </div>
+        <div data-role="footer">
+            <a href="#homepage"></a>
+        </div>
+    </div>
+
+    <div data-role="page" id="COMP">
+        <div data-role="header">
+            <h1>COMPUTER TECHNOLOGY</h1>
+        </div>
+        <div data-role="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nesciunt minima explicabo iste veritatis laborum! Exercitationem, rem quaerat laboriosam vitae autem eaque. Sunt ipsum autem aspernatur sint, perferendis dignissimos aut.</p>
+        </div>
+        <div data-role="footer">
+            <a href="#homepage"></a>
+        </div>
+    </div>
+
+    <div data-role="page" id="MECH">
+        <div data-role="header">
+            <h1>MECHANICAL</h1>
+        </div>
+        <div data-role="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nesciunt minima explicabo iste veritatis laborum! Exercitationem, rem quaerat laboriosam vitae autem eaque. Sunt ipsum autem aspernatur sint, perferendis dignissimos aut.</p>
+        </div>
+        <div data-role="footer">
+            <a href="#homepage"></a>
+        </div>
+    </div>
+
+    <div data-role="page" id="ELE">
+        <div data-role="header">
+            <h1>ELECTRICAL</h1>
+        </div>
+        <div data-role="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nesciunt minima explicabo iste veritatis laborum! Exercitationem, rem quaerat laboriosam vitae autem eaque. Sunt ipsum autem aspernatur sint, perferendis dignissimos aut.</p>
+        </div>
+        <div data-role="footer">
+            <a href="#homepage"></a>
+        </div>
+    </div>
+
+    <div data-role="page" id="ENTC">
+        <div data-role="header">
+            <h1>ELECTRONICS AND TELECOMMUNICATION</h1>
+        </div>
+        <div data-role="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nesciunt minima explicabo iste veritatis laborum! Exercitationem, rem quaerat laboriosam vitae autem eaque. Sunt ipsum autem aspernatur sint, perferendis dignissimos aut.</p>
+        </div>
+        <div data-role="footer">
+            <a href="#homepage"></a>
+        </div>
+    </div>
+</body>
+</html>
